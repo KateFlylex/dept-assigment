@@ -1,11 +1,12 @@
 import React from 'react';
+import WorkGrid from '../components/WorkGrid/WorkGrid';
 
 const WorkPage = () => {
   return (
     <div>
-      Work
+      <WorkGrid />
     </div>
-  );
+  )
 };
 
 export default WorkPage;

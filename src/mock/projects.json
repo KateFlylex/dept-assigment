@@ -1,0 +1,182 @@
+[
+  {
+    "id": 0,
+    "company": "Bol.com",
+    "title": "A Summer island in the Netherlands",
+    "categoryID": 1,
+    "industriesID": 2,
+    "img": "image-4.png",
+    "link": "#",
+    "notes": []
+  },
+  {
+    "id": 1,
+    "company": "Kempen",
+    "title": "Not some average banking website",
+    "categoryID": 2,
+    "industriesID": 3,
+    "img": "image-5.png",
+    "link": "#",
+    "notes": []
+  },
+  {
+    "id": 2,
+    "company": "Philips",
+    "title": "Beautiful design meets innovative technology",
+    "categoryID": 3,
+    "industriesID": 2,
+    "img": "image-6.png",
+    "link": "#",
+    "notes": []
+  },
+  {
+    "id": 3,
+    "company": "Gemeentemuseum",
+    "title": "A 100 years of Mondriaan & De Stijl",
+    "categoryID": 4,
+    "industriesID": 3,
+    "img": "image-7.png",
+    "link": "#",
+    "notes": []
+  },
+  {
+    "id": 4,
+    "company": "Florensis",
+    "title": "Rethinking the entire online ecosystem",
+    "categoryID": 5,
+    "industriesID": 2,
+    "img": "image-3.png",
+    "link": "#",
+    "position": "left",
+    "notes": [
+      {
+        "id": 5,
+        "title": "MICROSOFT",
+        "description": "Tapping into Ireland’s unique gaming culture and bringing a fresh flavour to their Xbox social media channels",
+        "link": "#"
+      },
+      {
+        "id": 6,
+        "title": "O’NEILL",
+        "description": "Integrating existing content into O’Neills’s new e-commerce platform",
+        "link": "#"
+      },
+      {
+        "id": 7,
+        "title": "MICROSOFT",
+        "description": "Tapping into Ireland’s unique gaming culture and bringing a fresh flavour to their Xbox social media channels",
+        "link": "#"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "company": "Bol.com",
+    "title": "A summer island in the Netherlands",
+    "categoryID": 8,
+    "industriesID": 3,
+    "img": "image-8.png",
+    "link": "#",
+    "notes": []
+  },
+  {
+    "id": 9,
+    "company": "Philips",
+    "title": "A summer island in the Netherlands",
+    "categoryID": 0,
+    "industriesID": 2,
+    "img": "image-9.png",
+    "link": "#",
+    "notes": []
+  },
+  {
+    "id": 14,
+    "company": "FLORENSIS",
+    "title": "Rethinking the entire online ecosystem",
+    "categoryID": 2,
+    "industriesID": 3,
+    "img": "image-16.png",
+    "link": "#",
+    "position": "right",
+    "notes": [
+      {
+        "id": 10,
+        "title": "AMAZON",
+        "description": "Starting with delivering through drones",
+        "link": "#"
+      },
+      {
+        "id": 11,
+        "title": "O’NEILL",
+        "description": "Integrating existing content into O’Neills’s new e-commerce platform",
+        "link": "#"
+      },
+      {
+        "id": 12,
+        "title": "MICROSOFT",
+        "description": "Tapping into Ireland’s unique gaming culture and bringing a fresh flavour to their Xbox social media channels",
+        "link": "#"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "company": "CHOCOMEL",
+    "title": "A campaign for the limited edition letter packs",
+    "categoryID": 3,
+    "industriesID": 2,
+    "img": "image-10.png",
+    "link": "#",
+    "notes": []
+  },
+  {
+    "id": 16,
+    "company": "JBL",
+    "title": "Live like a champion with Jerome Boateng",
+    "categoryID": 4,
+    "industriesID": 3,
+    "img": "image-11.png",
+    "link": "#",
+    "notes": []
+  },
+  {
+    "id": 17,
+    "company": "ZALANDO",
+    "title": "Innovative SEO and content strategy for Zalando",
+    "categoryID": 4,
+    "industriesID": 3,
+    "img": "image-12.png",
+    "link": "#",
+    "notes": []
+  },
+  {
+    "id": 18,
+    "company": "KONINKLIJKE BIBLIOTHEEK",
+    "title": "The search of the most influential book ever",
+    "categoryID": 4,
+    "industriesID": 3,
+    "img": "image-13.png",
+    "link": "#",
+    "notes": []
+  },
+  {
+    "id": 19,
+    "company": "LIBERTY GLOBAL",
+    "title": "Delivering complex commerce solutions",
+    "categoryID": 4,
+    "industriesID": 3,
+    "img": "image-14.png",
+    "link": "#",
+    "notes": []
+  },
+  {
+    "id": 19,
+    "company": "ARLA",
+    "title": "Swipe to find your next holiday destination",
+    "categoryID": 4,
+    "industriesID": 3,
+    "img": "image-15.png",
+    "link": "#",
+    "notes": []
+  }
+]
