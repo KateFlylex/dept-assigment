@@ -8,20 +8,20 @@ import CommonPage from './components/CommonPage/CommonPage';
 
 function App() {
   return (
-    <div className="bg-dept-grey">
+    <>
       <Header/>
-      <main>
+      <main className="bg-dept-grey h-screen">
         <Routes>
           <Route path="/" element={<HomePage/>}/>
           <Route path="/work" element={<WorkPage/>}/>
-          <Route path="/culture" element={<CommonPage/>}/>
-          <Route path="/service" element={<CommonPage/>}/>
-          <Route path="/insights" element={<CommonPage/>}/>
-          <Route path="/contact" element={<CommonPage/>}/>
-          <Route path="/careers" element={<CommonPage/>}/>
+          <Route path="/culture" element={<CommonPage pageName='Culture'/>}/>
+          <Route path="/service" element={<CommonPage pageName='Service'/>}/>
+          <Route path="/insights" element={<CommonPage pageName='Insights'/>}/>
+          <Route path="/contact" element={<CommonPage pageName='Contact'/>}/>
+          <Route path="/careers" element={<CommonPage pageName='Careers'/>}/>
         </Routes>
       </main>
-    </div>
+    </>
   );
 }
 

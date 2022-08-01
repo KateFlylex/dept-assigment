@@ -25,8 +25,11 @@ const WorkGrid = () => {
   }
 
   if (!displayedProjects?.length) {
-    return <div className="text-center text-white font-extralight text-2xl p-8">Nothing was
-      found</div>
+    return (
+    <div className="text-center text-white font-extralight text-2xl p-8">
+      Nothing was found
+    </div>
+    )
   }
 
   return (

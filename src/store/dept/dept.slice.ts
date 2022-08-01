@@ -21,6 +21,10 @@ export const deptSlice = createSlice({
     },
     changeIndustryFilter(state, action: PayloadAction<number>) {
       state.industryFilter = industries.find(industry => industry.id === action.payload) || initialState.industryFilter;
+    },
+    resetFilters(state) {
+      state.categoryFilter = initialState.categoryFilter;
+      state.industryFilter = initialState.industryFilter;
     }
   }
 })

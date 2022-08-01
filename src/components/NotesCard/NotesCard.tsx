@@ -8,7 +8,7 @@ type NotesCardProps = {
 
 const NotesCard: React.FC<NotesCardProps> = ({notes}) => {
   return (
-    <div className='w-full pt-8 pb-8 pl-8 pr-8'>
+    <div className='w-full pt-8 pb-8 pl-8 pr-8 bg-dept-grey'>
       {
         notes?.map((note, index) => (
           <div key={note.id}>

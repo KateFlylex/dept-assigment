@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { categories, industries } from '../../constants/categories';
 import { IFilterItem } from '../../models/models';
 import { useLocation } from 'react-router-dom';
@@ -25,7 +25,7 @@ const FiltersBar = () => {
           break;
       }
     })
-  }, []);
+  }, [location]);
 
   const filterHandlerCategory = (category: IFilterItem) => {
     changeCategoryFilter(category.id);
