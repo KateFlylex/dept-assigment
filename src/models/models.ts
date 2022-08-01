@@ -16,3 +16,8 @@ export interface IProject {
   position?: string;
   notes: INote[] | [];
 }
+
+export interface IFilterItem {
+  id: number;
+  name: string;
+}

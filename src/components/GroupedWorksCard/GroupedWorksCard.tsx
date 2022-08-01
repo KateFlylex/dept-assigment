@@ -14,15 +14,15 @@ const GroupedWorksCard: React.FC<WorkCardProps> = ({project}) => {
       {
         project.position === POSITION.left ? (
           <>
-          <div
-            className="md:w-4/6"
-          >
-            <WorkCard project={project} key={project.id} />
-          </div>
+            <div
+              className="md:w-4/6"
+            >
+              <WorkCard project={project}/>
+            </div>
             <div
               className="md:w-2/6  h-auto md:max-h-568"
             >
-              <NotesCard notes={project.notes} />
+              <NotesCard notes={project.notes}/>
             </div>
           </>
         ) : (
@@ -31,7 +31,7 @@ const GroupedWorksCard: React.FC<WorkCardProps> = ({project}) => {
               <NotesCard notes={project.notes}/>
             </div>
             <div className="md:w-4/6">
-              <WorkCard project={project} key={project.id} />
+              <WorkCard project={project}/>
             </div>
           </>
         )

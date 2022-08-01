@@ -12,7 +12,7 @@ type WorkCardProps = {
 const WorkCard: React.FC<WorkCardProps> = ({project}) => {
   return (
     <div
-      className="col-span-2 md:col-span-1 flex items-end h-484 md:h-568 transition ease-in-out delay-150"
+      className="flex items-end h-484 md:h-568 transition ease-in-out delay-150"
       style={{
         background: `linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(${images[project.img]})`,
         backgroundPosition: 'center center',
