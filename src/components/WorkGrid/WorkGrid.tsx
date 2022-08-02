@@ -4,15 +4,12 @@ import WorkCard from '../WorkCard/WorkCard';
 import { useGetWorksQuery } from '../../store/dept/dept.api';
 import { IProject } from '../../models/models';
 import { useAppSelector } from '../../hooks/redux';
+import Quote from '../Quote/Quote';
 
 const WorkGrid = () => {
   const {isLoading, isError, data: projects} = useGetWorksQuery(null);
   const [displayedProjects, setDisplayedProjects] = useState(projects);
   const {categoryFilter, industryFilter} = useAppSelector(state => state.dept);
-  const quote = {
-    text: "Dept helped us tell our story through a bold new identity and a robust online experience. To the tone of 60% growth in online bookings in just one month",
-    author: 'MATTIJS TEN DRINK - CEO, TRANSAVIA'
-  }
 
   useEffect(() => {
     if (!projects) return
@@ -30,27 +27,33 @@ const WorkGrid = () => {
 
   if (!displayedProjects?.length) {
     return (
-    <div className="text-center text-white font-extralight text-2xl p-8">
-      Nothing was found
-    </div>
+      <div className="text-center text-white font-extralight text-2xl p-8">
+        Nothing was found
+      </div>
     )
   }
 
   return (
     <div className="bg-dept-grey grid grid-flow-row-dense grid-cols-2">
       {
-        displayedProjects.map((project: IProject) =>
+        displayedProjects.map((project: IProject, index: number) =>
           project.notes.length ? (
             <GroupedWorksCard project={project} key={project.id}/>
           ) : (
-            <div
-              className={`${categoryFilter.id || industryFilter.id ? 'col-span-2' : 'col-span-2 md:col-span-1'}`}
-              key={project.id}
-            >
-              <WorkCard
-                project={project}
-              />
-            </div>
+            <>
+              <div
+                className={`${categoryFilter.id || industryFilter.id ? 'col-span-2' : 'col-span-2 md:col-span-1'}`}
+                key={project.id}
+              >
+                <WorkCard
+                  project={project}
+                />
+
+              </div>
+              {
+                index === 11 && <div className="col-span-2"><Quote/></div>
+              }
+            </>
           )
         )
       }
