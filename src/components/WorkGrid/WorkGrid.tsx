@@ -9,6 +9,10 @@ const WorkGrid = () => {
   const {isLoading, isError, data: projects} = useGetWorksQuery(null);
   const [displayedProjects, setDisplayedProjects] = useState(projects);
   const {categoryFilter, industryFilter} = useAppSelector(state => state.dept);
+  const quote = {
+    text: "Dept helped us tell our story through a bold new identity and a robust online experience. To the tone of 60% growth in online bookings in just one month",
+    author: 'MATTIJS TEN DRINK - CEO, TRANSAVIA'
+  }
 
   useEffect(() => {
     if (!projects) return
@@ -33,7 +37,7 @@ const WorkGrid = () => {
   }
 
   return (
-    <div className="grid grid-flow-row-dense grid-cols-2">
+    <div className="bg-dept-grey grid grid-flow-row-dense grid-cols-2">
       {
         displayedProjects.map((project: IProject) =>
           project.notes.length ? (

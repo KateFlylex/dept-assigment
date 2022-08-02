@@ -20,14 +20,14 @@ const GroupedWorksCard: React.FC<WorkCardProps> = ({project}) => {
               <WorkCard project={project}/>
             </div>
             <div
-              className="md:w-2/6  h-auto md:max-h-568"
+              className="md:w-2/6 h-auto md:max-h-568"
             >
               <NotesCard notes={project.notes}/>
             </div>
           </>
         ) : (
           <>
-            <div className="md:w-2/6 h-484 h-auto md:max-h-568">
+            <div className="md:w-2/6 h-auto md:max-h-568">
               <NotesCard notes={project.notes}/>
             </div>
             <div className="md:w-4/6">

@@ -43,7 +43,7 @@ const FiltersBar = () => {
 
   return (
     <div
-      className="relative h-24 bg-white p-8 text-2xl font-extralight z-20 text-neutral-500 flex justify-between">
+      className="relative h-24 bg-white p-8 text-2xl font-extralight z-20 text-neutral-500 sm:flex sm:justify-between">
       <div>
         Show me
         <DropDown

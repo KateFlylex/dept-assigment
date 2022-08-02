@@ -1,27 +1,33 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import HomePage from './pages/HomePage';
 import WorkPage from './pages/WorkPage';
 import Header from './components/Header/Header';
-import CommonPage from './components/CommonPage/CommonPage';
+import CommonPage from './pages/CommonPage';
+import { importAllImages } from './hooks/importAllImages';
+import Footer from './components/Footer/Footer';
+import Form from './components/Form/Form';
+
+const images = importAllImages(require.context('./assets/pages', false, /\.(png|jpe?g|svg)$/));
 
 function App() {
   return (
-    <>
+    <div className="bg-dept-grey flex flex-col h-screen">
       <Header/>
-      <main className="bg-dept-grey h-screen">
+      <main>
         <Routes>
-          <Route path="/" element={<HomePage/>}/>
-          <Route path="/work" element={<WorkPage/>}/>
-          <Route path="/culture" element={<CommonPage pageName='Culture'/>}/>
-          <Route path="/service" element={<CommonPage pageName='Service'/>}/>
-          <Route path="/insights" element={<CommonPage pageName='Insights'/>}/>
-          <Route path="/contact" element={<CommonPage pageName='Contact'/>}/>
-          <Route path="/careers" element={<CommonPage pageName='Careers'/>}/>
+          <Route path="/" element={<CommonPage heroText={<h1>Home Page</h1>} heroImage={images['work-page.png']}/>}/>
+          <Route path="/work" element={<WorkPage heroImage={images['work-page.png']}/>}/>
+          <Route path="/culture" element={<CommonPage heroText={<h1>Culture</h1>} heroImage={images['work-page.png']}/>}/>
+          <Route path="/service" element={<CommonPage heroText={<h2>Service</h2>} heroImage={images['work-page.png']}/>}/>
+          <Route path="/insights" element={<CommonPage heroText={<h2>Insights</h2>} heroImage={images['work-page.png']}/>}/>
+          <Route path="/contact" element={<CommonPage heroText={<h2>Contact</h2>} heroImage={images['work-page.png']}/>}/>
+          <Route path="/careers" element={<CommonPage heroText={<h2>Careers</h2>} heroImage={images['work-page.png']}/>}/>
         </Routes>
       </main>
-    </>
+      <Form />
+      <Footer />
+    </div>
   );
 }
 
