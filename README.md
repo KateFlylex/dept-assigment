@@ -1,9 +1,4 @@
-# DEPT assigment - Kateryna Kurnus
-
-Hi, Dept team
-
-Thank you for an assigment, it was interesting to do it.
-If you have any questions, feel free to ask :)
+Application was created in scope of the assignment from DEPT
 
 To run the project:
 ### `npm start`
